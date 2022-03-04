@@ -43,6 +43,8 @@ public class Jdbcex {
             while (resultSet.next()) {
                 System.out.println(resultSet.getString("sname"));
             }
+
+            con.close();
         }catch (Exception e){
             e.printStackTrace();
         }
